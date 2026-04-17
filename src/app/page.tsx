@@ -36,7 +36,7 @@ export default function Home() {
         </section>
       </div>
 
-      <section className="h-full flex flex-col justify-between gap-14 items-center py-24 text-center  p-4 font-semibold   border border-black/20  rounded-4xl backdrop-blur-xs">
+      <section className="flex flex-col justify-between gap-14 items-center py-24 text-center  p-4 font-semibold   border border-black/20  rounded-4xl backdrop-blur-xs">
         <div className="size-34 absolute top-0 left-1/2 -translate-1/2">
           <Image src={mainBg} className="w-full h-full" alt="" />
         </div>
