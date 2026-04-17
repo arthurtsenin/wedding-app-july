@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Great_Vibes, Poiret_One } from "next/font/google";
+import { Great_Vibes, Poiret_One ,Inter} from "next/font/google";
 import Image from "next/image";
 import "./globals.css";
 
 import mainBg from "$/main_bg.jpeg";
 
 const primary = Poiret_One({
-  weight: "400",
+  weight: ["400"],
   variable: "--font-primary",
   subsets: ["latin"],
 });
@@ -30,12 +30,12 @@ export default function RootLayout({
   return (
     <html lang="ru" className={"h-full w-full  scroll-smooth"}>
       <body
-        className={`${primary.variable} ${secondary.variable} font-primary antialiased  flex flex-col justify-center text-stone-700`}
+        className={`${primary.variable} ${secondary.variable} font-primary antialiased  flex flex-col justify-center text-stone-800`}
       >
         <Image src={mainBg} fill className="object-cover" priority alt="" />
-        <div className="bg-amber-900/5 absolute inset-0"></div>
+        {/* <div className="bg-amber-900/5 absolute inset-0"></div> */}
 
-        <main className="text-3xl  h-full w-full items-center  overflow-x-hidden flex flex-col justify-between absolute gap-30 inset-0 overflow-auto px-4 ">
+        <main className="text-3xl  h-full w-full items-center font-bold  overflow-x-hidden flex flex-col justify-between absolute gap-30 inset-0 overflow-auto px-4 ">
           {children}
         </main>
       </body>

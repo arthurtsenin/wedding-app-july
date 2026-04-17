@@ -9,7 +9,7 @@ export default function Home() {
         <h1 className="uppercase">ПРиглашение на праздник любви</h1>
 
         <div className="font-secondary text-7xl font-light md:flex md:text-9xl gap-14 relative">
-          <p className="absolute top-1/2 text-[180px] opacity-25 left-1/2 -translate-x-1/2 -translate-y-1/2">
+          <p className="absolute top-1/2 text-[180px] opacity-25 left-1/2 -translate-x-1/2 -translate-y-1/2 p-8 ">
             &
           </p>
           <p>Виталий</p>
@@ -20,9 +20,9 @@ export default function Home() {
       </section>
 
       <div className=" border-4 p-1 rounded-4xl backdrop-blur-xs">
-        <section className="w-full h-full flex flex-col justify-between gap-14 items-center py-24 text-center  p-4 font-semibold  border-2  rounded-3xl  ">
+        <section className="w-full h-full flex flex-col justify-between gap-14 items-center py-14 text-center  p-4 font-semibold  border-2  rounded-3xl  ">
           <h2 className="uppercase font-bold">ДОРОГИЕ РОДНЫЕ И БЛИЗКИЕ!</h2>
-          <div className="flex flex-col gap-10 text-xl">
+          <div className="flex flex-col gap-8 text-xl">
             <p>В нашей жизни предстоят счастливые перемены!</p>
             <p>
               Мы хотим, чтобы в этот день рядом были самые близкие и дорогие для
@@ -78,7 +78,7 @@ export default function Home() {
       </section>
 
       <section className="w-full h-full flex flex-col justify-between gap-10 items-center py-24 text-center  p-4 font-semibold     ">
-        <h2 className="uppercase font-extrabold relative leading-6">
+        <h2 className="uppercase font-extrabold relative">
           Место встречи
           <p className="font-secondary capitalize text-5xl absolute top-1/2 left-1/2 -translate-x-1/2 z-10 text-black opacity-10">
             Location
@@ -98,7 +98,7 @@ export default function Home() {
         <h2 className="uppercase font-extrabold relative leading-6">
           Пожелания
           <p className="font-secondary capitalize text-5xl absolute top-1/2 left-1/2 -translate-x-1/2 -z-10 text-black opacity-10">
-            wishes
+            Wishes
           </p>
         </h2>
         <div className="flex flex-col justify-center gap-10 text-xl">
