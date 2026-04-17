@@ -5,7 +5,7 @@ import mainBg from "$/decor.png";
 export default function Home() {
   return (
     <>
-      <section className="min-h-screen w-full h-full flex flex-col justify-between items-center py-14  text-center font-semibold  ">
+      <section className="min-h-[100svh] w-full h-full flex flex-col justify-between items-center py-14  text-center font-semibold  ">
         <h1 className="uppercase">ПРиглашение на праздник любви</h1>
 
         <div className="font-secondary text-7xl font-light md:flex md:text-9xl gap-14 relative">
