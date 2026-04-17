@@ -107,11 +107,11 @@ export default function Home() {
             появится ряд вопросов. Мы постарались ответить на некоторые
           </p>
           <ul className=" flex flex-col gap-15 ">
-            <li>
+            <li className="flex flex-col items-center gap-4">
               <div className="size-34 ">
                 <Image src={mainBg} className="w-full h-full" alt="" />
               </div>
-              <p>Сюрпризы</p>
+              <p className="text-taupe-500  uppercase text-3xl">Сюрпризы</p>
               <p>
                 Возьми с собой отличное настроение! Приветсвуются ваши
                 поздравления, активное участие в интерактивах, творческие
@@ -120,11 +120,11 @@ export default function Home() {
               </p>
             </li>
 
-            <li>
+            <li className="flex flex-col items-center">
               <div className="size-34 ">
                 <Image src={mainBg} className="w-full h-full" alt="" />
               </div>
-              <p>Цветы</p>
+              <p className="text-taupe-500  uppercase text-3xl">Цветы</p>
               <p>
                 Наш праздник будет окружен изобилием цветов, поэтому приятным
                 комплиментом для нас вместо букета будет бутылка вашего любимого
@@ -132,11 +132,11 @@ export default function Home() {
               </p>
             </li>
 
-            <li>
+            <li className="flex flex-col items-center">
               <div className="size-34 ">
                 <Image src={mainBg} className="w-full h-full" alt="" />
               </div>
-              <p>Что дарить?</p>
+              <p className="text-taupe-500  uppercase text-3xl">Что дарить?</p>
               <p>
                 В качестве подарка будем рады вкладу в бюджет нашей семьи. Он
                 точно поможет воплотить нашу мечту в реальность!
