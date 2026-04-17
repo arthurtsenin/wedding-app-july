@@ -5,7 +5,7 @@ import mainBg from "$/decor.png";
 export default function Home() {
   return (
     <>
-      <section className="min-h-[100svh] w-full h-full flex flex-col justify-between items-center py-14  text-center font-semibold  ">
+      <section className="min-h-screen w-full h-full flex flex-col justify-between items-center py-14  text-center font-semibold  ">
         <h1 className="uppercase">ПРиглашение на праздник любви</h1>
 
         <div className="font-secondary text-7xl font-light md:flex md:text-9xl gap-14 relative">
@@ -29,7 +29,7 @@ export default function Home() {
               нас люди.
             </p>
             <p>
-              Будем рады если вы станете частью официального дня рождения нашей
+              Будем рады, если вы станете частью официального дня рождения нашей
               семьи.
             </p>
           </div>
@@ -49,9 +49,9 @@ export default function Home() {
         </h2>
         <div className="flex flex-col justify-center gap-10 text-xl">
           <p>
-            Уважаемы гости, мы подготовили для Вас насыщенную программу,
+            Уважаемые гости, мы подготовили для Вас насыщенную программу,
             <br />
-            котрая подарит незабываемы мгновения:
+            которая подарит незабываемые мгновения:
           </p>
           <div className=" flex-col gap-6 text-4xl lg:p-4 font-bold lg:max-w-10/12 self-center grid grid-cols-[auto_1fr] ">
             {/* <li className="   items-center grid grid-cols-[auto_1fr]  "> */}
