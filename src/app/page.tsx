@@ -137,7 +137,7 @@ export default function Home() {
         <div className="flex flex-col justify-center gap-10 text-xl">
           <p>
             Мы догадываемся, что после получения приглашения у вас может
-            появиться ряд вопросов мы постарались ответить на некоторые.
+            появиться ряд вопросов, мы постарались ответить на некоторые.
           </p>
           <ul className=" flex flex-col gap-15  lg:flex-row">
             <li className="flex flex-col items-center gap-3">
@@ -160,7 +160,7 @@ export default function Home() {
               </div>
               <p className="text-taupe-600  uppercase text-3xl">Что дарить?</p>
               <p>
-                В качестве подарка будем рады вкладу в бюджет нашей семьи.Он
+                В качестве подарка будем рады вкладу в бюджет нашей семьи. Он
                 точно поможет воплотить нашу мечту в реальность!
               </p>
             </li>
