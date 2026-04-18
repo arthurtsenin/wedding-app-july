@@ -1,15 +1,48 @@
 import Image from "next/image";
 
-import mainBg from "$/decor.png";
+import decor from "$/decor.webp";
+import decor2 from "$/decor2.webp";
+
+import alco from "$/alcohol.webp";
+import emotional from "$/emotional.webp";
+import money from "$/money.webp";
+
+const OPEN_GRAPH = {
+  openGraph: {
+    title: "Приглашение на праздник любви",
+    description:
+      "С огромной радостью и волнением приглашаем вас разделить с нами один из самых важных и значимых дней в нашей жизни — день нашей свадьбы. Этот день для нас символизирует начало нового этапа, наполненного любовью, счастьем и совместными мечтами.",
+
+    siteName: "Приглашение на праздник любви",
+    images: [
+      {
+        url: "https://ia600604.us.archive.org/26/items/2026-04-18-14.20.17/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-04-18%20%D0%B2%2014.20.17.png",
+      },
+    ],
+  },
+};
+
+export const BASE_METADATA = {
+  ...OPEN_GRAPH,
+  applicationName: "Приглашение на праздник любви",
+  robots: "follow, index",
+};
+
+export const metadata = {
+  ...BASE_METADATA,
+  title: "Приглашение на праздник любви",
+  description:
+    "С огромной радостью и волнением приглашаем вас разделить с нами один из самых важных и значимых дней в нашей жизни — день нашей свадьбы. Этот день для нас символизирует начало нового этапа, наполненного любовью, счастьем и совместными мечтами.",
+};
 
 export default function Home() {
   return (
     <>
-      <section className="min-h-screen w-full h-full flex flex-col justify-between items-center py-14  text-center font-semibold  ">
-        <h1 className="uppercase">ПРиглашение на праздник любви</h1>
+      <section className="wrapper section-p min-h-screen w-full h-full flex flex-col justify-between items-center  text-center font-semibold  ">
+        <h1 className="uppercase">Приглашение на праздник любви</h1>
 
-        <div className="font-secondary text-7xl font-light md:flex md:text-9xl gap-14 relative">
-          <p className="absolute top-1/2 text-[180px] opacity-25 left-1/2 -translate-x-1/2 -translate-y-1/2 p-8 ">
+        <div className="font-secondary text-7xl font-light lg:flex md:text-9xl gap-14 relative">
+          <p className="absolute top-1/2 text-[180px] opacity-25 left-1/2 -translate-x-1/2 -translate-y-1/2 p-8  lg:text-[280px]">
             &
           </p>
           <p>Виталий</p>
@@ -19,8 +52,8 @@ export default function Home() {
         <div>31 июля 2026 г.</div>
       </section>
 
-      <div className=" border-4 p-1 rounded-4xl backdrop-blur-xs">
-        <section className="w-full h-full flex flex-col justify-between gap-14 items-center py-14 text-center  p-4 font-semibold  border-2  rounded-3xl  ">
+      <section className="wrapper border-2 p-1 rounded-4xl backdrop-blur-xs">
+        <div className="section-p w-full h-full flex flex-col justify-between gap-14 items-center  text-center  p-4 font-semibold  border  rounded-3xl  shadow-2xl ">
           <h2 className="uppercase font-bold">ДОРОГИЕ РОДНЫЕ И БЛИЗКИЕ!</h2>
           <div className="flex flex-col gap-8 text-xl">
             <p>В нашей жизни предстоят счастливые перемены!</p>
@@ -33,12 +66,12 @@ export default function Home() {
               семьи.
             </p>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
 
-      <section className="flex flex-col justify-between gap-14 items-center py-24 text-center  p-4 font-semibold   border border-black/20  rounded-4xl backdrop-blur-xs">
+      <section className="wrapper section-p flex flex-col justify-between gap-14 items-center  text-center  p-4 font-semibold   border border-black/20  rounded-4xl backdrop-blur-xs  shadow-2xl">
         <div className="size-34 absolute top-0 left-1/2 -translate-1/2">
-          <Image src={mainBg} className="w-full h-full" alt="" />
+          <Image src={decor} className="w-full h-full" alt="" />
         </div>
 
         <h2 className="uppercase font-extrabold relative leading-6">
@@ -77,7 +110,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full h-full flex flex-col justify-between gap-10 items-center py-24 text-center  p-4 font-semibold     ">
+      <section className="wrapper section-p w-full h-full flex flex-col justify-between gap-10 items-center  text-center  p-4 font-semibold     ">
         <h2 className="uppercase font-extrabold relative">
           Место встречи
           <p className="font-secondary capitalize text-5xl absolute top-1/2 left-1/2 -translate-x-1/2 z-10 text-black opacity-10">
@@ -90,9 +123,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className=" flex flex-col justify-between gap-14 items-center py-24 text-center  p-6 font-semibold   border border-black/20  rounded-4xl backdrop-blur-xs">
+      <section className="wrapper section-p flex flex-col justify-between gap-14 items-center  text-center  p-6 font-semibold   border border-black/20  rounded-4xl backdrop-blur-xs  ">
         <div className="size-34 absolute top-0 left-1/2 -translate-1/2">
-          <Image src={mainBg} className="w-full h-full" alt="" />
+          <Image src={decor2} className="w-full h-full" alt="" />
         </div>
 
         <h2 className="uppercase font-extrabold relative leading-6">
@@ -104,57 +137,50 @@ export default function Home() {
         <div className="flex flex-col justify-center gap-10 text-xl">
           <p>
             Мы догадываемся, что после получения приглашения у вас может
-            появится ряд вопросов. Мы постарались ответить на некоторые
+            появиться ряд вопросов мы постарались ответить на некоторые.
           </p>
-          <ul className=" flex flex-col gap-15 ">
-            <li className="flex flex-col items-center gap-4">
-              <div className="size-34 ">
-                <Image src={mainBg} className="w-full h-full" alt="" />
+          <ul className=" flex flex-col gap-15  lg:flex-row">
+            <li className="flex flex-col items-center gap-3">
+              <div className="size-30 ">
+                <Image src={emotional} className="w-full h-full" alt="" />
               </div>
-              <p className="text-taupe-500  uppercase text-3xl">Сюрпризы</p>
+              <p className="text-taupe-400  uppercase text-3xl">
+                Что взять с собой?
+              </p>
               <p>
-                Возьми с собой отличное настроение! Приветсвуются ваши
-                поздравления, активное участие в интерактивах, творческие
-                выступления! Вы можетеобратиться к нашему организатору для
-                воплощения своих идей!
+                Хорошее настроение! Веселитесь, танцуйте, побольше
+                фотографируйте и переживайте самые счастливые моменты вместе с
+                нами!
               </p>
             </li>
 
-            <li className="flex flex-col items-center">
-              <div className="size-34 ">
-                <Image src={mainBg} className="w-full h-full" alt="" />
+            <li className="flex flex-col items-center  gap-3">
+              <div className="size-30 ">
+                <Image src={money} className="w-full h-full" alt="" />
               </div>
-              <p className="text-taupe-500  uppercase text-3xl">Цветы</p>
+              <p className="text-taupe-400  uppercase text-3xl">Что дарить?</p>
               <p>
-                Наш праздник будет окружен изобилием цветов, поэтому приятным
-                комплиментом для нас вместо букета будет бутылка вашего любимого
-                крепкого алкоголя
-              </p>
-            </li>
-
-            <li className="flex flex-col items-center">
-              <div className="size-34 ">
-                <Image src={mainBg} className="w-full h-full" alt="" />
-              </div>
-              <p className="text-taupe-500  uppercase text-3xl">Что дарить?</p>
-              <p>
-                В качестве подарка будем рады вкладу в бюджет нашей семьи. Он
+                В качестве подарка будем рады вкладу в бюджет нашей семьи.Он
                 точно поможет воплотить нашу мечту в реальность!
               </p>
             </li>
 
-            {/* <li>
-              <div className="size-34 ">
-                <Image src={mainBg} className="w-full h-full" alt="" />
+            <li className="flex flex-col items-center  gap-3">
+              <div className="size-30 ">
+                <Image src={alco} className="w-full h-full" alt="" />
               </div>
-              <p>Маленькие гости</p>
+              <p className="text-taupe-400  uppercase text-3xl">Цветы</p>
               <p>
-               Дорогие гости, мы будем благодарныБ если вы посвятите нашему дню все своевнимание и энергию, сможете по-настоящему отдохнуть и развлечься
+                Наш праздник будет окружен изобилием цветов, поэтому приятным
+                комплиментом для нас вместо букета будет бутылка вашего любимого
+                алкоголя.
               </p>
-            </li> */}
+            </li>
           </ul>
         </div>
       </section>
+
+      <h3 className="text-5xl text-center text-taupe-600">С нетерпением ждем Вас!</h3>
     </>
   );
 }

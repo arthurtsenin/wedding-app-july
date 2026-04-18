@@ -9,8 +9,7 @@
 }
 
 @theme inline {
-
-  --breakpoint-xl: 100rem;
+  --breakpoint-xl: 10rem;
 
   /* Fonts */
   --font-primary: var(--font-primary), ui-sans-serif, system-ui, sans-serif;
@@ -35,4 +34,18 @@ body {
 
     background: rgb(74, 72, 72);
   }
+}
+
+@layer utilities {
+  .wrapper {
+    @apply max-w-7xl;
+  }
+
+
+
+   .section-p {
+    @apply py-24;
+  }
+
+
 }
