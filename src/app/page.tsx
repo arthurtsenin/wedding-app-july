@@ -144,7 +144,7 @@ export default function Home() {
               <div className="size-30 ">
                 <Image src={emotional} className="w-full h-full" alt="" />
               </div>
-              <p className="text-taupe-400  uppercase text-3xl">
+              <p className="text-taupe-600  uppercase text-3xl">
                 Что взять с собой?
               </p>
               <p>
@@ -158,7 +158,7 @@ export default function Home() {
               <div className="size-30 ">
                 <Image src={money} className="w-full h-full" alt="" />
               </div>
-              <p className="text-taupe-400  uppercase text-3xl">Что дарить?</p>
+              <p className="text-taupe-600  uppercase text-3xl">Что дарить?</p>
               <p>
                 В качестве подарка будем рады вкладу в бюджет нашей семьи.Он
                 точно поможет воплотить нашу мечту в реальность!
@@ -169,7 +169,7 @@ export default function Home() {
               <div className="size-30 ">
                 <Image src={alco} className="w-full h-full" alt="" />
               </div>
-              <p className="text-taupe-400  uppercase text-3xl">Цветы</p>
+              <p className="text-taupe-600  uppercase text-3xl">Цветы</p>
               <p>
                 Наш праздник будет окружен изобилием цветов, поэтому приятным
                 комплиментом для нас вместо букета будет бутылка вашего любимого
@@ -180,7 +180,7 @@ export default function Home() {
         </div>
       </section>
 
-      <h3 className="text-5xl text-center text-taupe-600">С нетерпением ждем Вас!</h3>
+      <h3 className="text-5xl text-center text-taupe-700">С нетерпением ждем Вас!</h3>
     </>
   );
 }
